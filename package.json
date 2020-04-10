@@ -1,0 +1,23 @@
+{
+  "name": "onestopkenya_2020",
+  "version": "1.0.0",
+  "description": "Online radio and internet services provider",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingsolo50/onestopkenya.git"
+  },
+  "keywords": [
+    "Online",
+    "radio"
+  ],
+  "author": "Solomon Kamanu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kingsolo50/onestopkenya/issues"
+  },
+  "homepage": "https://github.com/kingsolo50/onestopkenya#readme"
+}
