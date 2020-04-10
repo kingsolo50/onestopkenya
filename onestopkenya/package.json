@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "2.0.0",
+  "description": "Online radio station",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "online",
+    "radio"
+  ],
+  "author": "Solomon Kamanu",
+  "license": "MIT",
+  "github": "https://github.com/kingsolo50/onestopkenya.git"
+}
