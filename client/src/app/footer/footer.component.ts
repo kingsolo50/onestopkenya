@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatePipe } from'@angular/common';
 
 @Component({
   selector: 'app-footer',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  today: number = Date.now();
+  
   constructor() { }
 
   ngOnInit() {

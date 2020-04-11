@@ -8,6 +8,7 @@ import { LandingComponent } from './landing/landing.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TodosComponent } from './todos/todos.component';
+import { FeedComponent } from './landing/feed/feed.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { TodosComponent } from './todos/todos.component';
     LandingComponent,
     HeaderComponent,
     FooterComponent,
-    TodosComponent
+    TodosComponent,
+    FeedComponent
   ],
   imports: [
     BrowserModule,

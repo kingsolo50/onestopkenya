@@ -1,0 +1,38 @@
+.obg {
+    opacity: 0.9;
+    background-color: #333;
+    height: 80vh;
+    margin: 1em;
+    color: white;
+}
+
+.cc_recenttracks_list {
+    scroll-behavior: smooth;
+    text-align-last: auto;
+    max-height: 45vh;
+    overflow: auto;
+}
+
+.moveUp {
+    margin-top: -1.8em;
+}
+
+h4 {
+    margin-top: 0.5em;
+}
+
+// Feed component 
+.card {
+    color: white;
+    background-color: transparent;
+    img {
+        margin-top: 0.5em;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+    .card-body {        
+        padding: 0 0 0 1.25em;
+    }
+}
