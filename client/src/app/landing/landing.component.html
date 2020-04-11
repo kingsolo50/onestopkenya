@@ -1,48 +1,13 @@
 <div class="container">
   <div class="row">
     <div class="col obg">      
-      <h4>Now playing</h4>
-      <small>
-        Current song: <a href="https://nebula.shoutca.st/tunein/kingsolo50.pls" class="cc_streaminfo" data-type="song" data-username="kingsolo50">Loading ...</a><br />
-        Station time: <span class="cc_streaminfo" data-type="date" data-username="kingsolo50"></span> <span class="cc_streaminfo" data-type="time" data-username="kingsolo50"></span><br />
-      </small>
-      <!-- WOULD LIKE TO SOURCE THE ARTIST NOW PLAYING IMAGE HERE !! -->
-      <!-- ALBUM ART HERE, BELOW CODE DOESN'T SOURCE IMAGE -->
-      <!-- Album image:<br /><img class="cc_streaminfo" data-type="trackimageurl" data-username="kingsolo50" /><br /><a href="#" class="cc_streaminfo" data-type="trackbuyurl" data-username="kingsolo50">Buy this album</a><br /> -->
-      <!-- AUDIO PLAYER -->
-      <audio id="streamSource" style="width: 100%;" controls="controls" autoplay="true" class="mt-3 audioPlayer animated pulse">
-        <source src="http://nebula.shoutca.st:8602/; " type="audio/ogg" />
-        <source src="http://nebula.shoutca.st:8602/; " type="audio/mp3" />          
-        <p>
-          'Your browser does not support the audio element.'
-          <a href="http://tunein.com/radio/One-Stop-Radio-Kenya-s280787/">Click here to listen open player</a>
-        </p>
-        <!-- RADIO STREAMS -->
-        <div id="cc_tunein mt-1">
-          <a href="https://nebula.shoutca.st/tunein/kingsolo50.pls"><img align="absmiddle" src="https://nebula.shoutca.st/system/images/tunein-pls.png" border="0" alt="Winamp, iTunes" title="Winamp, iTunes" /></a>
-          <a href="https://nebula.shoutca.st/tunein/kingsolo50.asx"><img align="absmiddle" src="https://nebula.shoutca.st/system/images/tunein-asx.png" border="0" alt="Windows Media Player" title="Windows Media Player" /></a>
-          <a href="https://nebula.shoutca.st/tunein/kingsolo50.ram"><img align="absmiddle" src="https://nebula.shoutca.st/system/images/tunein-ram.png" border="0" alt="Real Player" title="Real Player" /></a>
-          <a href="https://nebula.shoutca.st/tunein/kingsolo50.qtl"><img align="absmiddle" src="https://nebula.shoutca.st/system/images/tunein-qtl.png" border="0" alt="QuickTime" title="QuickTime" /></a>
-        </div>      
-      </audio>
-      <hr class="my-4">
-      <h4 class="moveUp">Recent tracks</h4>
-      <div class="cc_recenttracks_list" data-username="kingsolo50">Loading ...</div>
+      <app-nowplaying></app-nowplaying>
     </div>
-    <div class="col obg">
+    <div class="col-6 obg">
       <app-feed></app-feed>
     </div>
     <div class="col obg">
-      <h4>Song Request</h4>
-      <form class="cc_request_form" data-username="kingsolo50">
-        <div data-type="result"></div>
-        Song artist: <input class="form-control" type="text"  name="request[artist]" size="40" maxlength="127" /><br />
-        Song title: <input class="form-control" type="text"  name="request[title]" size="40" maxlength="127" /><br />
-        Dedicated to: <input class="form-control" type="text"  name="request[dedication]" size="40" maxlength="127" /><br />
-        Your name: <input class="form-control" type="text"  name="request[sender]" size="40" maxlength="127" /><br />
-        Your E-mail: <input class="form-control" type="text"  name="request[email]" size="40" maxlength="127" /><br />
-        <input class="mt-1 btn btn-primary btn-large" type="button" value="Submit song request" data-type="submit" /><br />
-      </form>
+      <app-songrequest></app-songrequest>
     </div>
   </div>
 </div>

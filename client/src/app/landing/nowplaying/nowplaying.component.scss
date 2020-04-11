@@ -1,0 +1,13 @@
+@import '../landing.component.scss';
+
+
+.cc_recenttracks_list {
+    scroll-behavior: smooth;
+    text-align-last: auto;
+    max-height: 40vh;
+    overflow: auto;
+}
+
+.moveUp {
+    margin-top: -1.8em;
+}

@@ -1,42 +1,59 @@
 <!-- <hr class="my-4"> -->
-<div class="container mt-3">
+<div class="container" style="background: whitesmoke;">
   <div class="row">
-    <div class="col">
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <img src="../assets/images/footerLogo.png" class="card-img mt-4 img-fluid" alt="...">                
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="card-body">
-              <h1 class="card-title">One Stop Kenya</h1>
-              <h4 class="text-muted">
-                <marquee> We strive to play all the latest sounds from the mother land +254. Coming soon, tourism, car hire and entertainment listings ...  </marquee>
-              </h4>
-              <h1 class="card-title">Contact Us</h1>
-              <a href="https://api.whatsapp.com/send?phone=447935491001">
-                <h4 class="whatsapp"><i class="fab fa-whatsapp"></i>&nbsp;Whatsapp: +44 7935491...</h4>
-              </a>
-              <p class="card-text"><small class="text-muted">
-                <i class="far fa-copyright"></i>&nbsp;2019 - {{today | date:'yyyy'}}<span class="year"></span>&nbsp;One Stop Kenya
-              </small></p>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-12 mt-4">
-            <u>Adverts</u>
-            <hr class="my-4">
-            <a href="http://www.blockl93.com">
-              <p class="m-2">
-                <img src="http://www.blockl93.com/assets/img/logo-trans.png" style="width: 5em;" class="img-fluid" alt="">
-              </p>
-              <p class="small" style="color: blue;">
-                Connecting businesses, farmer and investors 
-              </p>
+    <!-- Logo -->
+    <div class="col mt-2">
+      <img src="../assets/images/footerLogo.png" class="img-fluid" alt="...">                
+    </div>
+    <!-- Information -->
+    <div class="col small mt-2">
+      <h3 class="card-title">One Stop Kenya</h3>
+      <h4 class="text-muted">
+        <marquee> We strive to play all the latest sounds from the mother land +254. Coming soon, tourism, car hire and entertainment listings ...  </marquee>
+      </h4>
+      <h5>
+      <div class="row mt-2">
+          <div class="col">
+            <a href="https://api.whatsapp.com/send?phone=447935491001">
+              <i class="fab fa-whatsapp"></i>
             </a>
-            <hr class="my-4">
           </div>
+          <div class="col">
+            <a href="http://www.facebook.com/onestopradiokenya" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+          <div class="col">
+            <a href="http://www.twitter.com/1skRadio" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <div class="col">
+            <a href="http://www.instagram.com/onestopradiokenya">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>      
         </div>
-      </div>
+      </h5>
+    </div>
+    <!-- Adverts -->
+    <div class="col mt-2">
+      <u>Adverts</u>
+      <hr class="my-4">
+      <a href="http://www.blockl93.com">
+        <p class="m-2">
+          <img src="http://www.blockl93.com/assets/img/logo-trans.png" style="width: 5em;" class="img-fluid" alt="">
+        </p>
+        <p class="small" style="color: blue;">
+          Connecting businesses, farmer and investors 
+        </p>
+      </a>
+      <hr class="my-4">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center m-2">
+      <i class="far fa-copyright"></i>&nbsp;2019 - {{today | date:'yyyy'}}<span class="year"></span>&nbsp;One Stop Kenya
     </div>
   </div>
 </div>

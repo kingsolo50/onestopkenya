@@ -1,1 +1,33 @@
 @import '../landing.component.scss';
+
+// Feed component 
+
+.card {
+    color: white;
+    background-color: transparent;
+    img {
+        margin-top: 0.5em;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+    .card-body {        
+        padding: 0 0 0 1.25em;
+    }
+}
+
+.containment {
+    overflow: auto;
+    height: 67.5vh;
+    margin: 1em 0;
+}
+
+.flags {
+    width: 1em;
+    margin-left: 0.5em;
+}
+
+h4 {
+    cursor: pointer;
+}

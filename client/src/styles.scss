@@ -3,7 +3,7 @@
 
 body {
     //
-    h1, h2, h3, h4, h5, h6{ font-family: 'Baloo Paaji 2', cursive; }
+    h1, h2, h3, h4, h5, h6{ font-family: 'Baloo Paaji 2', serif, sans-serif; }
     
     //?
     // background-color: whitesmoke;
@@ -11,5 +11,11 @@ body {
     //? Haven't decided on body font or color
     font-family: 'Baloo Paaji 2', cursive;
 
-    color: whitesmoke;
+    //? color: whitesmoke;
+
+    // .container {
+    //     padding-left: 0px;
+    //     padding-right: 0px;
+    // }
+
 }
