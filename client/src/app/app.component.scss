@@ -1,9 +1,37 @@
-.page {
-    height: 100vh;
-    background: url(https://images.pexels.com/photos/2014342/pexels-photo-2014342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    opacity: 1;
+@mixin desktop {
+    .page {
+        height: 100vh;
+        background: url(https://images.pexels.com/photos/2014342/pexels-photo-2014342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        opacity: 1;
+    }
 }
+@mixin mobile {
+    .page {
+        height: 100%;
+        background: url(https://images.pexels.com/photos/2014342/pexels-photo-2014342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        opacity: 1;
+    }
+}
+
+// Small devices (Most mobile phones)
+@media (max-width: 575px) { @include mobile(); }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { @include mobile(); }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { @include mobile(); }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { @include desktop(); }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { @include desktop(); }

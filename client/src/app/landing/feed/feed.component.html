@@ -21,7 +21,7 @@
   </a>
 </h4>
 <div class="containment small">
-  <div *ngIf="data.totalResults === 0">
+  <div *ngIf="data?.totalResults === 0">
     :( Nothing here ... 
   </div>
   <div class="card mb-3" style="max-width: 540px;" *ngFor="let d of data?.articles">

@@ -19,7 +19,7 @@ export class FeedComponent implements OnInit {
   newsFeed() {
     this.api.newsInt().subscribe(
       data => {
-        console.log(data);
+        //* console.log(data);
         this.data = data;      
       }, err => {
         console.log(err);
@@ -31,12 +31,12 @@ export class FeedComponent implements OnInit {
     
     const query = x; 
     
-    // return console.log(query); 
+    //! return console.log(query); 
 
     this.api.getSportsDE(query).subscribe(
       data => {
         this.data = data;
-        console.log(data);
+        //* console.log(data);
       }, err => {
         console.log(err);
       }
@@ -48,12 +48,12 @@ export class FeedComponent implements OnInit {
     
     const query = x; 
     
-    // return console.log(query); 
+    //! return console.log(query); 
 
     this.api.getSportsCA(query).subscribe(
       data => {
         this.data = data;
-        console.log(data);
+        // console.log(data);
       }, err => {
         console.log(err);
       }
@@ -70,7 +70,7 @@ export class FeedComponent implements OnInit {
     this.api.getSportsAU(query).subscribe(
       data => {
         this.data = data;
-        console.log(data);
+        // console.log(data);
       }, err => {
         console.log(err);
       }
@@ -87,7 +87,7 @@ export class FeedComponent implements OnInit {
     this.api.getSportsUSA(query).subscribe(
       data => {
         this.data = data;
-        console.log(data);
+        // console.log(data);
       }, err => {
         console.log(err);
       }
@@ -104,7 +104,7 @@ export class FeedComponent implements OnInit {
     this.api.getSportsJP(query).subscribe(
       data => {
         this.data = data;
-        console.log(data);
+        // console.log(data);
       }, err => {
         console.log(err);
       }
@@ -122,7 +122,7 @@ export class FeedComponent implements OnInit {
     this.api.getSportsGB(query).subscribe(
       data => {
         this.data = data;
-        console.log(data);
+        // console.log(data);
       }, err => {
         console.log(err);
       }
