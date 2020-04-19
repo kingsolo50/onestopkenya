@@ -8,7 +8,7 @@ import * as $ from 'jquery';
 const routes: Routes = [
   { path: 'home', component: LandingComponent },
   { path: 'todo', component: TodosComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
  
 @NgModule({
