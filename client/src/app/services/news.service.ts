@@ -17,6 +17,7 @@ export class NewsService {
   private jpApi = 'https://newsapi.org/v2/top-headlines?country=jp&apiKey='+environment.apiKey;
   
   private showThis  = '&category=';
+  private country ='&country=';
 
   constructor(private http: HttpClient) { }
   
