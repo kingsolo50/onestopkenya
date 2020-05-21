@@ -28,16 +28,16 @@
     <div class="row no-gutters">
       
       <div class="col-md-4">
-        <img src="{{d?.urlToImage}}" class="card-img" alt="...">
+        <a href="{{d?.url}}" target="/blank"><img src="{{d?.urlToImage}}" class="card-img" alt="..."></a>
         <!-- <img src="https://images.pexels.com/photos/275496/pexels-photo-275496.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img" alt="..."> -->
       </div>
   
       <div class="col-md-8">
         <div class="card-body">
-          <!-- <h5 class="card-title">Card title</h5> -->
-          <p class="card-text">
+          <h5 class="card-title" style="font-size: 1.2em;">{{d?.title}}title</h5>
+          <!-- <p class="card-text">
             {{d?.description}}
-          </p>
+          </p> -->
           <p class="card-text">
             <small class="text-muted">{{d?.publishedAt | date}}</small>
           </p>

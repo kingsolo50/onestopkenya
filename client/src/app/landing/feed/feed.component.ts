@@ -13,7 +13,7 @@ export class FeedComponent implements OnInit {
   constructor(private api: NewsService) { }
 
   ngOnInit() {
-    this.newsFeed();
+    this.loadGBFeed('sport');
   }
 
   newsFeed() {
@@ -117,7 +117,7 @@ export class FeedComponent implements OnInit {
     
     const query = x; 
     
-    // return console.log(query); 
+    // console.log(query); 
 
     this.api.getSportsGB(query).subscribe(
       data => {

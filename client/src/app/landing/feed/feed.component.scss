@@ -18,7 +18,8 @@
 }
 
 .containment {
-    overflow: auto;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     height: 70vh;
     margin: 1em 0;
 }

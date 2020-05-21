@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Howl, Howler} from 'howler';
+
 
 @Component({
   selector: 'app-nowplaying',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NowplayingComponent implements OnInit {
 
-  constructor() { }
+  sound: any;
+
+  constructor() {} 
 
   ngOnInit() {
+    
+    
+    
+  }
+  
+  playSound() {
+    var sound = new Howl({
+      src: 'http://nebula.shoutca.st:2199/start/kingsolo50',
+      format: ['mp3', 'aac', 'ogg']
+    });
+    sound.play();
+    console.log('Play button clicked..')
   }
 
+  
+ 
 }
