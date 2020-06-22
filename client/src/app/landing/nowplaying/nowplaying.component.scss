@@ -4,10 +4,31 @@
 .cc_recenttracks_list {
     scroll-behavior: smooth;
     text-align-last: auto;
-    max-height: 35vh;
+    max-height: 65vh;
     overflow: auto;
 }
 
 .moveUp {
     margin-top: -2em;
 }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 767px) {
+    .mobile{
+        display: inline;
+    }   
+    .desktop {
+        display: none;
+    } 
+}
+  
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 768px) {
+    .desktop {
+        display: inline;
+    }
+    .mobile {
+        display: none;
+    }
+}
+  

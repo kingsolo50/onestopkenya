@@ -1,49 +1,16 @@
-<!-- Already in a container > row > col -->
-<h4>
-  <a (click)="newsFeed()">FYI</a>
-  <a (click)="loadGBFeed('sport')">
-    <img src="https://www.worldometers.info/img/flags/small/tn_uk-flag.gif" alt="" class="img-fluid flags">
-  </a>
-  <a (click)="loadUSAFeed('sport')">
-    <img src="https://www.worldometers.info/img/flags/small/tn_us-flag.gif" alt="" class="img-fluid flags">
-  </a>
-  <a (click)="loadDEFeed('sport')">
-    <img src="https://www.worldometers.info/img/flags/small/tn_gm-flag.gif" alt="" class="img-fluid flags">
-  </a>
-  <a (click)="loadJPFeed('sport')">
-    <img src="https://www.worldometers.info/img/flags/small/tn_ja-flag.gif" alt="" class="img-fluid flags">
-  </a>
-  <a (click)="loadAUFeed('sport')">
-    <img src="https://www.worldometers.info/img/flags/small/tn_as-flag.gif" alt="" class="img-fluid flags">
-  </a>
-  <a (click)="loadCAFeed('sport')">
-    <img src="https://www.worldometers.info/img/flags/small/tn_ca-flag.gif" alt="" class="img-fluid flags">
-  </a>
-</h4>
-<div class="containment small">
-  <div *ngIf="data?.totalResults === 0">
-    :( Nothing here ... 
-  </div>
-  <div class="card mb-3" style="max-width: 540px;" *ngFor="let d of data?.articles">
-    <div class="row no-gutters">
-      
-      <div class="col-md-4">
-        <a href="{{d?.url}}" target="/blank"><img src="{{d?.urlToImage}}" class="card-img" alt="..."></a>
-        <!-- <img src="https://images.pexels.com/photos/275496/pexels-photo-275496.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img" alt="..."> -->
-      </div>
-  
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title" style="font-size: 1.2em;">{{d?.title}}title</h5>
-          <!-- <p class="card-text">
-            {{d?.description}}
-          </p> -->
-          <p class="card-text">
-            <small class="text-muted">{{d?.publishedAt | date}}</small>
-          </p>
-        </div>
-      </div>
-  
-    </div>
-  </div>
-</div>
+<p>
+    <small>
+        The presenters are just a bunch of guys and girls who are passionate about music and we enjoy sharing it with you.
+        If you can, please feel free to help us by simply clicking on the donate button and contributing an amount towards our monthly expenditure so that we can continue to bring you great music every day without any interruptions: 
+
+    </small>
+</p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="mt-2">
+    <input type="hidden" name="cmd" value="_s-xclick" />
+    <input type="hidden" name="hosted_button_id" value="QEP5782AT54R6" />
+    <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+    <img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+</form> 
+<p>    
+THANK YOU SO MUCH.
+</p>
